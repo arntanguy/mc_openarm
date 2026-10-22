@@ -13,6 +13,8 @@ experiments with the real platform.
 
 - [mc_rtc](https://jrl-umi3218.github.io/mc_rtc/)
 - [openarm_description](https://github.com/enactic/openarm_description)
+- [xacro](https://github.com/ros/xacro) (`ros-<distro>-xacro`): the URDFs are
+  generated from the xacro files of openarm_description at build time
 
 ## Build instructions
 
