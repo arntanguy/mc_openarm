@@ -7,6 +7,8 @@
 namespace
 {
 static const std::string MC_OPENARM_DESCRIPTION_PATH = "@MC_OPENARM_DESCRIPTION_PATH@";
+// URDFs generated from the xacro files of openarm_description
+static const std::string MC_OPENARM_URDF_DIR = "@MC_OPENARM_URDF_DIR@";
 
 } // namespace
 
@@ -20,10 +22,10 @@ std::string urdfPathForVersion(OpenArmVersion version)
   switch(version)
   {
     case OpenArmVersion::V1:
-      return MC_OPENARM_DESCRIPTION_PATH + "/assets/robot/openarm_v1.0/urdf/example/v1.urdf";
+      return MC_OPENARM_URDF_DIR + "/openarm_v1.urdf";
     case OpenArmVersion::V2:
     default:
-      return MC_OPENARM_DESCRIPTION_PATH + "/assets/robot/openarm_v2.0/urdf/example/v2.urdf";
+      return MC_OPENARM_URDF_DIR + "/openarm_v2.urdf";
   }
 }
 } // namespace
