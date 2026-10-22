@@ -34,5 +34,5 @@ $ sudo make install
 ```yaml
 Robots:
   openarm:
-    module: OpenArmV12 # or OpenArm (alias of OpenArmV1)
+    module: OpenArmV2 # or OpenArm (alias of OpenArmV1)
 ```
